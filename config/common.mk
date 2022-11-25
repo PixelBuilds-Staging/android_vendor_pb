@@ -173,6 +173,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     PixelBuildsWalls
 
+# BtHelper
+PRODUCT_PACKAGES += \
+    BtHelper
+
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 
 # Versioning
