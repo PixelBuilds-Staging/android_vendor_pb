@@ -72,6 +72,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     SimpleDeviceConfig
 
+# SettingsGoogleFutureFaceEnroll
+PRODUCT_PACKAGES += \
+    SettingsGoogleFutureFaceEnroll \
+
 # Extra tools from Lineage
 PRODUCT_PACKAGES += \
     bash \
