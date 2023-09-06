@@ -165,12 +165,10 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/pb/overlay
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/pb/overlay/common
 
-# Live Wallpapers
+# GMS features
+TARGET_SUPPORTS_CALL_RECORDING ?= true
+TARGET_SUPPORTS_GOOGLE_RECORDER ?= true
 TARGET_INCLUDE_LIVE_WALLPAPERS ?= true
-ifeq ($(TARGET_INCLUDE_LIVE_WALLPAPERS),true)
-PRODUCT_PACKAGES += \
-    PixelLiveWallpapersOverlay
-endif
 
 # TextClassifier
 PRODUCT_PACKAGES += \
