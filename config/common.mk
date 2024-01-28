@@ -173,6 +173,17 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     PixelBuildsWalls
 
+# Faceunlock
+TARGET_FACE_UNLOCK_SUPPORTED ?= false
+ifeq ($(TARGET_FACE_UNLOCK_SUPPORTED),true)
+
+PRODUCT_PACKAGES += \
+    ParanoidSense
+
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.face.sense_service=true
+endif
+
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 
 # Versioning
