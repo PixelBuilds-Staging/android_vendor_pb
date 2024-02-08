@@ -1,5 +1,6 @@
 # RRO Overlays
 PRODUCT_PACKAGES += \
+    FaceUnlockP4Overlay \
     FontArbutusSourceOverlay \
     FontArvoLatoOverlay \
     FontKaiOverlay \
